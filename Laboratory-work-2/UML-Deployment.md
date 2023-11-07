@@ -1,0 +1,1 @@
+![bP0nQyCm48Nt-nL7na8AyXn229dQ9XayT2WTbEZYghObepktDIN_lKfgYu0DfJT8ujxJwNjQiUWWRLr1HIT1yHXiyIPeRA2ZME-0I-iQ7NIDHryttf6JNBgAC5vI0CuRmjbYiI4knJVBvGmreodn6p3M8EyR2bgiAp3lMAYEljvnwtgc0ww3_sGAoP0gFOylT_Vl_9h4C_okPm3hX](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/37cec76d-b3d2-40b4-89ec-2e24644e5eb4)
