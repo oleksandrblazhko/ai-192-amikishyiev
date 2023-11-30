@@ -4,8 +4,8 @@ AS $$
 declare
 	str varchar;
 begin
-	str:= 'SELECT name, size FROM office WHERE name = ''' || class_office_name || '''';
-	raise notice 'Query=%', str;
-	return query execute str;
+	str := 'SELECT name::varchar, size::varchar FROM office WHERE name = ''' || class_office_name || '''';
+        raise notice 'Query=%', str;
+        return query execute str;
 end;
 $$ LANGUAGE plpgsql;
