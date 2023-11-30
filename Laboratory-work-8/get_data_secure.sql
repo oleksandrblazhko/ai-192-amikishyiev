@@ -6,6 +6,6 @@ declare
 begin
 	str:= 'SELECT * FROM office WHERE name::varchar = $1';
 	raise notice 'Query = %', str;
-	return query execute str using class_pupil_name;
+	return query execute str using class_office_name;
 end;
 $$ LANGUAGE plpgsql;
