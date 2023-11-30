@@ -4,7 +4,7 @@ AS $$
 declare
   str varchar;
 begin
-	str:= 'SELECT * FROM office WHERE name::varchar = $1';
+	str:= 'SELECT * FROM office WHERE name = $1';
 	raise notice 'Query = %', str;
 	return query execute str using class_office_name;
 end;
