@@ -4,7 +4,7 @@ AS $$
 DECLARE
     str varchar;
 BEGIN
-    str := 'UPDATE office SET name = $2 WHERE name = $1';
+    str := 'UPDATE office SET name::varchar = $2 WHERE name::varchar = $1';
     raise notice 'Query=%', str;
     execute str using pr_1, pr_2;
     return 'Office name was updated';
