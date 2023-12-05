@@ -26,16 +26,33 @@
 ![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/7773ccc9-9d76-4f53-ab29-addc0f4110f4)
 
 ### 8. Від імені нового користувача перевірте роботу механізму повноважного керування, виконавши операції SELECT, INSERT, UPDATE, DELETE
-> ##### Користувач amikishyiev (правіше) не має можливості бачити мітки конфіденційності, лише postgres користувач (лівіше) з правами.
+> ##### Користувач amikishyiev (правіше) не має можливості бачити мітки конфіденційності, лише postgres користувач (лівіше) з правами. Двійка була встановлена з метою того, щоб користувач amikishyiev тимчасово побачив для себе файли. 
 #### SELECT
-![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/21abac28-80df-438f-a1ae-8d2e586289c5)
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/6f083a06-74b6-4253-9106-5d8355637c04)
+
+
+
+
+> ##### Для об'єктивності всі раніше створені файли будуть мати 3-й рівень мітки конфіденційності. Тепер користувач amikishyiev не має змоги їх бачити.
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/e84dca4f-70c7-4279-ba1f-9f0b065d6996)
 
 #### INSERT
-![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/93c2cbd3-fc17-45ec-8dc9-22ebf125a977)
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/5418c508-87e8-4c71-bebd-b927f52a7ba6)
+
+> ##### Користувач не бачить змін у себе через 3-й рівень мітки конфіденційності.
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/be995025-15b3-40da-8e8c-070aac63201e)
+
 
 #### UPDATE
-![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/4b193eec-33de-445a-8894-7ba17230d5fb)
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/0d44427e-1401-4f44-9ddd-31549ac34b22)
+> ##### Користувач не може зробити оновлення таблиці через 3-й рівень мітки конфіденційності.
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/bd761637-0350-4fe9-9a9e-270826b89a54)
+
 
 #### DELETE
-![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/175120b1-57bd-4c6d-8e8a-241553fe0e2c)
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/5f7cdd9b-d5e0-436a-a4b4-cdbf16dfa76c)
+> ##### Користувач не може зробити видалити конкретну строку в таблиці через 3-й рівень мітки конфіденційності.
+![image](https://github.com/oleksandrblazhko/ai-192-amikishyiev/assets/123385187/4d42c456-833c-4f05-8be4-acd3914f9d90)
+
+
 
